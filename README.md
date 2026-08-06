@@ -1,0 +1,1 @@
+# electronica-dato-al-objeto-2026
