@@ -5,7 +5,7 @@ float marco = 14;
 float horizonte = 540;
 
 void setup() {
-size(375, 680); // más compacto para que se vea completo en celular
+size(375, 680); // más compacto para que se vea completo en celularrr
 smooth();
 }
 
@@ -18,7 +18,7 @@ background(86, 171, 230);
 
 
 // -------------------------
-// NUBES
+// nubes
 // -------------------------
 float nube1 = (frameCount * 0.35) % (width + 180) - 120;
 float nube2 = width - ((frameCount * 0.22) % (width + 220)) + 60;
@@ -33,7 +33,7 @@ ellipse(nube2 - 55, 145, 105, 50);
 
 
 // -------------------------
-// TRIÁNGULOS ROSADOS
+// tri{angulos rosados
 // -------------------------
 fill(245, 50, 190);
 triangle(0, 120, 285, 300, 0, 500);
@@ -42,7 +42,7 @@ triangle(0, 330, 290, 350, 0, 560);
 
 
 // -------------------------
-// BANDA DIAGONAL
+// diagonal (banda)
 // -------------------------
 pushMatrix();
 translate(188, 285);
@@ -57,7 +57,7 @@ popMatrix();
 
 
 // -------------------------
-// CÍRCULO SUPERIOR
+// círculo de arriba
 // -------------------------
 float moverY = sin(frameCount * 0.03) * 8;
 
@@ -70,7 +70,7 @@ ellipse(278, 138 + moverY, 50, 50);
 
 
 // -------------------------
-// LÍNEAS DECORATIVAS
+// líneas
 // -------------------------
 stroke(55, 80, 220);
 strokeWeight(6);
@@ -81,7 +81,7 @@ line(230, 365 - vibracion, 360, 315 - vibracion);
 
 
 // -------------------------
-// BLOQUES
+// bloques
 // -------------------------
 noStroke();
 float bloque = sin(frameCount * 0.02) * 6;
@@ -94,7 +94,7 @@ rect(245 - bloque, 495, 90, 24);
 
 
 // -------------------------
-// ESFERAS
+// esferas
 // -------------------------
 float pulso = 26 + sin(frameCount * 0.05) * 4;
 
@@ -106,13 +106,13 @@ ellipse(110, 525, 20, 20);
 
 
 // -------------------------
-// CAMINO / GRILLA EN MOVIMIENTO
+//camino/y el movimiento de la grilla
 // -------------------------
 drawCamino();
 
 
 // -------------------------
-// MARCO
+// marco
 // -------------------------
 noFill();
 stroke(40, 70, 210);
@@ -134,7 +134,7 @@ noStroke();
 fill(150, 205, 245, 65);
 quad(leftBase, baseY, rightBase, baseY, vpX, vpY, width * 0.58, vpY);
 
-// líneas de profundidad
+// linas de profundidad
 stroke(220, 240, 255, 95);
 strokeWeight(1);
 
@@ -143,7 +143,7 @@ float xb = map(i, 0, 16, leftBase, rightBase);
 line(xb, baseY, vpX, vpY);
 }
 
-// bandas horizontales que van avanzanfo de a poquito"
+// bandas horizontales que van avanzando de a poquito"
 float avance = (frameCount * 0.045) % 1.0;
 
 for (int i = 0; i < 18; i++) {
